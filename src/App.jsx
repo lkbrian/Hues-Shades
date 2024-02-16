@@ -1,7 +1,8 @@
+import Layout from "./Layout"
 
 function App() {
   return (
-    <div>App</div>
+    <><Layout/></>
   )
 }
 
