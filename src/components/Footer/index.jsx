@@ -1,7 +1,8 @@
+import { Box } from "@chakra-ui/react"
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <Box position={'absolute'} bottom={0}>Footer</Box>
   )
 }
 

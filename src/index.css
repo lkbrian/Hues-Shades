@@ -1,0 +1,7 @@
+.links{
+    font-weight: 600;
+}
+.active{
+    text-decoration: underline;
+    color: red;
+}
