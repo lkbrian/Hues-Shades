@@ -1,7 +1,8 @@
+import { Box } from "@chakra-ui/react"
 
 function About() {
   return (
-    <div>About</div>
+    <Box id="About" height={'50vh'}>About</Box>
   )
 }
 
