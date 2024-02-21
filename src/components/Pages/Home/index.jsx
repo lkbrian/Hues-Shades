@@ -19,9 +19,9 @@ function Home() {
     },
   };
   return (
-    <Box  height={"auto"} >
+    <Box  height={"auto"} minH={'100vh'} >
       <Box
-        h={"70vh"}
+        h={"100vh"}
         bgImage="url('src/assets/home.jpg')"
         bgPosition="center"
         bgRepeat="no-repeat"
