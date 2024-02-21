@@ -1,7 +1,7 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Input, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import { FaFacebookSquare,FaLinkedin } from "react-icons/fa";
+import { FaFacebookSquare,FaTiktok } from "react-icons/fa";
 import { PiInstagramLogoFill } from "react-icons/pi";
 
 function Footer() {
@@ -23,7 +23,7 @@ function Footer() {
         p={"10px"}
         display={"flex"}
         justifyContent={"space-evenly"}
-        alignItems={"center"}
+        // alignItems={"center"}
         width={{base:"100%",md:"80%"}}
         gap={'20px'}
         flexWrap={'wrap'}
@@ -67,6 +67,7 @@ function Footer() {
           </Text>
           <Text>Email: huesshades.info@gmail.com</Text>
           <Text>Phone: +254 712 926862</Text>
+          <Text>Phone: +254 741 624223</Text>
           <Text
             fontWeight={"bold"}
             letterSpacing={"2px"}
@@ -80,23 +81,22 @@ function Footer() {
             >
             <Box display={'flex'} gap={'8px'} alignItems={'center'}>
               <FaFacebookSquare fontSize={'1.4rem'} />
-              <Link  href="#" target="_blank" mx={2}>
-           huesshades
+              <Link  href="https://www.facebook.com/profile.php?id=100087406458189&mibextid=ZbWKwL" target="_blank" mx={2}>
+           hues & shades
           </Link>
-            </Box>
-            <Box display={'flex'} gap={'8px'} alignItems={'center'}>
-            <PiInstagramLogoFill fontSize={'1.4rem'} />
-            <Link href="#" target="_blank" mx={2}>
-            huesshades1
+            </Box>           
+          <Box display={'flex'} gap={'8px'} alignItems={'center'}>
+          <FaTiktok fontSize={'1.4rem'} />
+          <Link href="https://vm.tiktok.com/ZMMJ9yhXM/" target="_blank" mx={2}>
+            hues & shades
           </Link>
           </Box>
           <Box display={'flex'} gap={'8px'} alignItems={'center'}>
-          <FaLinkedin fontSize={'1.4rem'} />
-          <Link href="#" target="_blank" mx={2}>
-            LinkedIn 
+            <PiInstagramLogoFill fontSize={'1.4rem'} />
+            <Link href="https://www.instagram.com/huesshades1?igsh=MTk1eWYyNnNjZGJpbQ==" target="_blank" mx={2}>
+            huesshades1
           </Link>
           </Box>
-          
         </Flex>
 
         </Box>
@@ -111,9 +111,11 @@ function Footer() {
           >
             Address
           </Text>
-          <Text>1st Avenue, Eastleigh,</Text>
-          <Text> Kamkunji, Nairobi, Kenya</Text>
-          <Text>Postal Code: 0 0610.</Text>
+          
+
+          <Text>4th Street 1st avenue,</Text>
+          <Text>Sahl Mall forthville,</Text>
+          <Text>Postal Code: 00610.</Text>
 
           <Text
             fontWeight={"bold"}
@@ -126,7 +128,7 @@ function Footer() {
           <Text>Saturday: 5:00 AM - 10:00 PM</Text>
           <Text>Sunday: 2:00pm - 10:00pm</Text>
         </Box>
-        <Flex flexDirection={"column"}>
+        <Flex flexDirection={"column"} textAlign={"center"}>
           <Text
             fontWeight={"bold"}
             letterSpacing={"2px"}
@@ -135,12 +137,16 @@ function Footer() {
             Newsletter
           </Text>
           <Text>Subscribe to our newsletter</Text>
+          <Box display={'flex'} gap={'20px'} py={'12px'}>
+            <Input type="email" placeholder="Enter your mail..." />
+            <Button color={'black'}bg={'#fff8ac'} letterSpacing={'2px'} w={'30%'} fontSize='sm'>subscribe</Button>
+          </Box>
         </Flex>
       </Box>
       {/* lower section */}
       <Flex
         gap={{base:"8px",md:"20px"}}
-        w={"70%"}
+        w={{base:"100%",md:"70%"}}
         pt={"10px"}
         borderTop={"1px solid #d4d4d4"}
         justifyContent={"center"}

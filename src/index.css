@@ -16,8 +16,7 @@ body{
 }
 
 .links:hover::after,
-.links.active::after,
-.footer-title::after
+.links.active::after
 {
   content: "";
   width: 100%;
@@ -28,6 +27,13 @@ body{
   left: 0px;
   border-radius: 4px;
 }
+
+.drawer-link.active::after,
+.drawer-link:hover::after{
+  width: 40%;
+  left: -10px;
+}
+
 /* footer */
 .footer{
   font-size: 1.1rem;
