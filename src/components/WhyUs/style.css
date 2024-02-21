@@ -1,14 +1,24 @@
 .card {
+<<<<<<< HEAD
   position: relative;
   margin: auto;
   margin-bottom: 10px;
   min-width: 250px;
   /* box-shadow:; */
+=======
+  width: 100vw; 
+  position: relative;
+ margin: auto;
+ margin-bottom: 10px;
+>>>>>>> d2409f5 ({Enhance}:Added an ImageDataStub & displayed the card item)
 }
 
 .image-container {
   position: relative;
+<<<<<<< HEAD
   border-radius: 12px;
+=======
+>>>>>>> d2409f5 ({Enhance}:Added an ImageDataStub & displayed the card item)
 
 }
 
@@ -24,6 +34,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
   background: linear-gradient(
     rgba(0, 0, 0, 1) 0%,
     rgba(0, 0, 0, 0.9) 50%,
@@ -46,4 +57,21 @@
 
 .text {
   font-size: 16px;
+=======
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white; 
+  padding: 20px; 
+  box-sizing: border-box;
+  z-index: 1; 
+}
+
+
+.heading {
+  font-size: 24px; 
+  margin-bottom: 10px; 
+}
+
+.text {
+  font-size: 16px; 
+>>>>>>> d2409f5 ({Enhance}:Added an ImageDataStub & displayed the card item)
 }
