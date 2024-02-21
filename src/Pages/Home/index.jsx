@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./styles.css";
+import WhyUs from "../../components/WhyUs";
 
 function Home() {
   const swiperOptions = {
@@ -103,6 +104,7 @@ function Home() {
           </SwiperSlide>
         </Swiper>
       </Box>
+      <WhyUs/>
     </Box>
   );
 }
