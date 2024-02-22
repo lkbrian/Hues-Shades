@@ -31,8 +31,8 @@ const WhyUs = () => {
             <Box className="image-container">
               <div className="overlay">
                 <Stack mt="2" spacing="3" textAlign={"center"}>
-                  <Heading size="md">Living room Sofa</Heading>
-                  <Text>{data.description}</Text>
+                  <Heading size={"lg"} color={'#fff8ac'}  letterSpacing={'2px'}>{data.name}</Heading>
+                  <Text letterSpacing={'1px'} fontSize={'1.2rem'}>{data.description}</Text>
                 </Stack>
               </div>
 
