@@ -21,6 +21,8 @@ function Home() {
   return (
     <Box  height={"auto"} minH={'100vh'} >
       <Box
+        // h={"100vh"}
+
         h={"100vh"}
         bgImage="url('src/assets/home.jpg')"
         bgPosition="center"
@@ -52,7 +54,7 @@ function Home() {
            <SwiperSlide >
             <Flex direction={'column'}  mt={{ base: ' 20px', md: "40px", lg: "56px" }}>
             <Box  className="title" data-swiper-parallax="-300" >
-             <Heading fontSize={{base:"1.5rem",md:"1.8rem"}}>Welcome to Hues & Shades: Where Elegance Meets Functionality</Heading>
+             <Heading fontSize={{base:"1.8rem",lg:"2.4rem"}}letterSpacing={'2px'}>Welcome to Hues & Shades: <br />Where Elegance Meets Functionality</Heading>
             </Box>
             
             <div className="text" data-swiper-parallax="-100">
@@ -70,7 +72,7 @@ function Home() {
           <SwiperSlide>
             <Flex  direction={'column'}  mt={{ base: ' 20px', md: "40px", lg: "56px" }}>
           <div className="title" data-swiper-parallax="-300">
-               <Heading fontWeight={'700'} > Elevate Your Space: Discover Our Exquisite Curtain Collection</Heading>
+               <Heading fontSize={{base:"1.8rem",lg:"2.4rem"}}letterSpacing={'2px'} > Elevate Your Space: <br />Discover Our Exquisite Curtain Collection</Heading>
             </div>
             <div className="text" data-swiper-parallax="-100">
               <Text as={"p"} fontSize={'1.2rem'}  w={[330, 500, 600]}>
@@ -86,9 +88,9 @@ function Home() {
           
           </SwiperSlide>
           <SwiperSlide>
-            <Flex  direction={'column'}  mt={{ base: ' 20px', md: "40px", lg: "56px" }}>
+            <Flex  direction={'column'}  >
          <div className="title" data-swiper-parallax="-300">
-              <Heading fontWeight={'700'}>  Craftsmanship at Its Finest: Quality Curtains for Every Space</Heading>
+              <Heading fontSize={{base:"1.8rem",lg:"2.4rem"}}letterSpacing={'2px'}>  Craftsmanship at its Finest: <br />Quality Curtains for Every Space</Heading>
             </div>
             <div className="text" data-swiper-parallax="-100">
               <Text as={"p"}fontSize={'1.2rem'}  w={[300, 500, 600]}>
