@@ -1,16 +1,16 @@
 import { Box } from "@chakra-ui/react";
 import { Route,Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Home from "./components/Pages/Home";
-import About from "./components/Pages/About";
-import Contact from "./components/Pages/Contact";
-import Services from "./components/Pages/Services";
+import Home from './Pages/Home'
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import Services from "./Pages/Services";
 import Footer from "./components/Footer";
-import Gallery from "./components/Pages/Gallery";
+import Gallery from "./Pages/Gallery";
 
 function Layout() {
   return (
-    <Box bg={"RGBA(0, 0, 0, 0.80)"} color={"#fff"} minH={"100vh"} display={"flex"} flexDirection={'column'}>
+    <Box bg={'#f5f5f5'} color={"#111"} minH={"100vh"} display={"flex"} flexDirection={'column'}>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

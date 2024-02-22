@@ -1,8 +1,4 @@
 
-body{
-  overflow-x: hidden;
-}
-
 /* Navbar */
 .links {
   font-weight: 550;
@@ -46,30 +42,3 @@ body{
 /* video{ */
   /* max-height: 500px; */
 /* } */
-
-}
-
-.links:hover,
-.links.active {
-  color: #fff7a2;
-}
-
-.links:hover::after,
-.links.active::after,
-.footer-title::after
-{
-  content: "";
-  width: 100%;
-  height: 2px;
-  background: #fff8ac;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  border-radius: 4px;
-}
-/* footer */
-.footer{
-  font-size: 1.1rem;
-  color: #d4d4d4;
-}
-
