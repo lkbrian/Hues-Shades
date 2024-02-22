@@ -20,7 +20,6 @@ const WhyUs = () => {
       <Text textAlign={"center"} p={'8px'}>Our Advantages</Text>
     <Flex
       gap={"20px"}
-      w={'100vw'}
       flexWrap="wrap"
       py="50px"
       px="20px"

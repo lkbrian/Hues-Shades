@@ -1,10 +1,10 @@
 import { Box, Flex, Image } from "@chakra-ui/react"
-import { images } from "../../../assets/galleryImages/images"
+import { images } from "../../assets/galleryImages/images"
 
 function Gallery() {
   console.log(images)
   return (
-    <Flex flexWrap={"wrap"} pt={"40px"} gap={"20px"} justifyContent={"center"} id="Gallery" w={'100vw'}>
+    <Flex flexWrap={"wrap"} pt={"40px"} gap={"20px"} justifyContent={"center"} id="Gallery" >
       {images.map((item, index) => (
         <Box key={index} width={'400px'} borderRadius={'8px'} >
           <Box>
