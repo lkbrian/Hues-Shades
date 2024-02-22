@@ -1,7 +1,7 @@
 import curt from "../../assets/curt.jpg";
 import curtain from "../../assets/curtain.jpg";
 import curtains from "../../assets/curtains.png";
-import home from "../../assets/home.jpg";
+// import home from "../../assets/home.jpg";
 export const ImageDataStub = [
   {
     id: 1,
@@ -21,23 +21,4 @@ export const ImageDataStub = [
     description: "A stunning landscape with mountains and a lake.",
     image: curtains,
   },
-  {
-    id: 4,
-    name: "home",
-    description: "A stunning landscape with mountains and a lake.",
-    image: home,
-  },
-  {
-    id: 4,
-    name: "home",
-    description: "A stunning landscape with mountains and a lake.",
-    image: home,
-  },
-  {
-    id: 5,
-    name: "home",
-    description: "A stunning landscape with mountains and a lake.",
-    image: home,
-  },
-  
 ];

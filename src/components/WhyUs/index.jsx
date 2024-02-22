@@ -1,31 +1,35 @@
-import React from "react";
+// import React from "react";
 import {
   Box,
-  Card,
-  CardBody,
+  // Card,
+  // CardBody,
   Flex,
   Heading,
   Image,
+  // SimpleGrid,
   Stack,
   Text,
 } from "@chakra-ui/react";
 import { ImageDataStub } from "./ImageDataStub";
-import './style.css'
+import "./style.css";
 
 const WhyUs = () => {
   return (
+    <>
+    <Heading textAlign={'center'} pt={'30px'}>Why Choose Us</Heading>
+      <Text textAlign={"center"} p={'8px'}>Our Advantages</Text>
     <Flex
-      direction={"row"}
-      gap={"3"}
-      alignItems={"center"}
-      justifyItems={"center"}
-      flexWrap={"wrap"}
-      pt={"50px"}
-    >
+      gap={"20px"}
+      w={'100vw'}
+      flexWrap="wrap"
+      py="50px"
+      px="20px"
+      color={'#111'}
+    >      
       {ImageDataStub.map((data, index) => {
         return (
-          <Card maxW="sm" className="card">
-            <CardBody className="image-container">
+          <Box key={index} maxW="md" className="card" boxShadow={' rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px'}>
+            <Box className="image-container">
               <div className="overlay">
                 <Stack mt="2" spacing="3" textAlign={"center"}>
                   <Heading size="md">Living room Sofa</Heading>
@@ -33,20 +37,21 @@ const WhyUs = () => {
                 </Stack>
               </div>
 
-              <Flex h={"200px"} w={"100%"}>
+              <Flex h={"500px"} w={"100%"}>
                 <Image
-                  w={"100vw"}
-                  key={index}
+                  objectFit={"cover"}
+                  w={"100%"}                  
                   src={data.image}
                   alt="profile"
                   borderRadius="lg"
                 />
               </Flex>
-            </CardBody>
-          </Card>
+            </Box>
+          </Box>
         );
       })}
     </Flex>
+    </>
   );
 };
 
