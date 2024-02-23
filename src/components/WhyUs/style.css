@@ -9,6 +9,7 @@
 .image-container {
   position: relative;
   border-radius: 12px;
+ 
 }
 
 .image {
@@ -43,4 +44,8 @@
 
 .text {
   font-size: 16px;
+}
+
+.description{
+  max-height: 100px;
 }
