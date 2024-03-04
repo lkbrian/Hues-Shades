@@ -22,7 +22,7 @@ function Home() {
   return (
     <Box height={"auto"} minH={"100vh"}>
       <Box
-        // h={"100vh"}
+        h={"55vh"}
         bgImage="url('src/assets/home.jpg')"
         bgPosition="center"
         bgRepeat="no-repeat"

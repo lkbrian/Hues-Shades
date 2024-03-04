@@ -1,8 +1,9 @@
-import { Box, Button, Flex, Input, Text } from "@chakra-ui/react";
+import { Box, Flex, Image,  Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { FaFacebookSquare,FaTiktok } from "react-icons/fa";
 import { PiInstagramLogoFill } from "react-icons/pi";
+import logo from "../../../logo/flg.png"
 
 function Footer() {
   return (
@@ -28,11 +29,14 @@ function Footer() {
         gap={'20px'}
         flexWrap={'wrap'}
         flexDirection={{base:"column",md:"row"}}
-      >             
+      > <Box display={{base: "none",md: "flex"}} alignSelf={"center"}>
+        <Image src={logo} alt="Hues & Shades" h={"120px"}/>
+        </Box>          
         <Box
-          display={"flex"}
+          
           flexDirection={"column"}
           gap={"8px"}
+          display={{base: "none",sm: "flex"}}
           textAlign={'center'}
         >
           <Text
@@ -128,7 +132,7 @@ function Footer() {
           <Text>Saturday: 5:00 AM - 10:00 PM</Text>
           <Text>Sunday: 2:00pm - 10:00pm</Text>
         </Box>
-        <Flex flexDirection={"column"} textAlign={"center"}>
+        {/* <Flex flexDirection={"column"} textAlign={"center"}>
           <Text
             fontWeight={"bold"}
             letterSpacing={"2px"}
@@ -141,7 +145,7 @@ function Footer() {
             <Input type="email" placeholder="Enter your mail..." />
             <Button color={'black'}bg={'#fff8ac'} letterSpacing={'2px'} w={'30%'} fontSize='sm'>subscribe</Button>
           </Box>
-        </Flex>
+        </Flex> */}
       </Box>
       {/* lower section */}
       <Flex

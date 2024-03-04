@@ -17,26 +17,26 @@ const WhyUs = () => {
   return (
     <>
     <Heading textAlign={'center'} pt={'30px'}>Why Choose Us</Heading>
-      <Text textAlign={"center"} p={'8px'}>Our Advantages</Text>
+      <Text textAlign={"center"} pt={'4px'} fontSize={"1.1rem"}>Discover the advantages of choosing our products</Text>
     <Flex
       gap={"20px"}
       flexWrap="wrap"
-      py="50px"
-      px="20px"
+      py="20px"
+      px={"8px"}
       color={'#111'}
     >      
       {ImageDataStub.map((data, index) => {
         return (
-          <Box key={index} maxW="md" className="card" boxShadow={' rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px'}>
+          <Box key={index} w={"sm"} className="card" boxShadow={' rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px'}>
             <Box className="image-container">
               <div className="overlay">
                 <Stack mt="2" spacing="3" textAlign={"center"}>
-                  <Heading size={"lg"} color={'#fff8ac'}  letterSpacing={'2px'}>{data.name}</Heading>
-                  <Text letterSpacing={'1px'} fontSize={'1.2rem'}>{data.description}</Text>
+                  <Heading fontSize={"1.6rem"} color={'#fff8ac'}  letterSpacing={'2px'}>{data.name}</Heading>
+                  <Text letterSpacing={'1px'} fontSize={'1.05rem'}>{data.description}</Text>
                 </Stack>
               </div>
 
-              <Flex h={"500px"} w={"100%"}>
+              <Flex h={"400px"} w={"100%"}>
                 <Image
                   objectFit={"cover"}
                   w={"100%"}                  
