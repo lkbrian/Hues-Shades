@@ -1,14 +1,11 @@
-import '@fontsource/jost'
-import { extendTheme } from "@chakra-ui/react"
-
-
-
+import "@fontsource/jost";
+import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
-   fonts: {
-     heading: `jost`,
-     body: `jost`,
-   },
- });
+  fonts: {
+    heading: `Lato`,
+    body: `Lato`,
+  },
+});
 
-export default theme
+export default theme;

@@ -1,7 +1,8 @@
 import React from "react";
-import { Box,Flex, Heading, useDisclosure } from "@chakra-ui/react";
+import { Box,DrawerFooter,Flex, Image, Text, useDisclosure } from "@chakra-ui/react";
 import { CgMenuLeftAlt } from "react-icons/cg";
 import { NavLink } from "react-router-dom";
+import hslogo from "/logo/hues-logo.png"
 import {
   Drawer,
   DrawerBody,
@@ -21,19 +22,9 @@ function Navbar() {
       w={"100%"}
       bg={"#111"}
       alignItems={"center"}
-      py={"20px"}
-      // position={"fixed"}
-      // bg={"#333333"}
-      // zIndex={3}
-    >
-      <Heading
-        bgGradient="linear(to-br,#BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C)"
-        bgClip={"text"}
-        size={"lg"}
-        pl={"12px"}
-      >
-        Hues & Shades
-      </Heading>
+      py={"20px"}overflow={"hidden"}
+    >      
+      <Image src={hslogo} h={'60px'} />
       <Flex
         as="nav"
         gap={{ base: "12px", md: "30px" }}
@@ -52,7 +43,7 @@ function Navbar() {
         <NavLink className={"links"} to={"/Services"} >
           Services
         </NavLink>
-        <NavLink className={"links"} to={"/Gallery"} >
+        <NavLink className={"links"} to={"/AppGallery"} >
           Gallery
         </NavLink>
       </Flex>
@@ -84,10 +75,13 @@ function Navbar() {
               <NavLink className={"links drawer-link"} to={"/Services"}smooth="true" onClick={()=>{onClose();}}>
                 Services
               </NavLink>
-              <NavLink className={"links drawer-link"} to={"/Gallery"}smooth="true" onClick={()=>{onClose();}}>
+              <NavLink className={"links drawer-link"} to={"/AppGallery"}smooth="true" onClick={()=>{onClose();}}>
                 Gallery
               </NavLink>
             </DrawerBody>
+            <DrawerFooter>
+            <Text color={"#d4d4d4"} fontSize={'.8rem'} textAlign={"center"}>&copy;2024 hues&shades.All rights reserved.</Text>
+          </DrawerFooter>
           </DrawerContent>
         </Drawer>
       </Flex>

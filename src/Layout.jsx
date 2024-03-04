@@ -6,7 +6,9 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Services from "./Pages/Services";
 import Footer from "./components/Footer";
-import Gallery from "./Pages/Gallery";
+import AppGallery from "./Pages/AppGallery";
+
+// import { images } from "../../assets/galleryImages/images";
 
 function Layout() {
   return (
@@ -17,7 +19,7 @@ function Layout() {
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Services" element={<Services />} />
-        <Route path="/Gallery" element={<Gallery />} />
+        <Route path="/AppGallery" element={<AppGallery />} />
       </Routes>          
       <Footer />
     </Box>
