@@ -45,8 +45,10 @@ import oji from "./0j6.jpg"
 import ojj from "./0j7.jpg"
 import ojk from "./0j8.jpg"
 import ojl from "./0j9.jpg"
+import ahues from "./ahues.jpg"
 
 export const imagesData = [
+  { src: ahues, type: "image" },
   { src: vif, type: "video" },
   { src: od, type: "image" },
   { src: oda, type: "image" },

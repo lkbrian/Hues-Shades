@@ -20,10 +20,12 @@ const WhyUs = () => {
       <Text textAlign={"center"} pt={'4px'} fontSize={"1.1rem"}>Discover the advantages of choosing our products</Text>
     <Flex
       gap={"20px"}
-      flexWrap="wrap"
+      flexWrap={"wrap"}
       py="20px"
       px={"8px"}
       color={'#111'}
+      justifyContent={"flex-start"}
+      alignItems={'flex-start'}
     >      
       {ImageDataStub.map((data, index) => {
         return (
