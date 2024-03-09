@@ -31,7 +31,7 @@ function HeroSection() {
     },
     {
       title: "Craftsmanship at its Finest",
-      subtitle: "Quality Curtains for Every Space",
+      subtitle: "Quality Products for Every Space",
       text: "Elevate your interior design with Hues & Shades. Visit us today to explore our stunning selection of curtains and discover how our expert team can help you find the perfect window treatments for your home. With our commitment to excellence and personalized service, we're here to make your decorating dreams a reality.",
     },
   ];
