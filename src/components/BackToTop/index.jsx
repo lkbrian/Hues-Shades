@@ -30,6 +30,7 @@ function BackToTop() {
 
   return (
     <Box
+    boxShadow={'lg'}
       position={"fixed"}
       bottom={"70px"}
       zIndex={"3"}
