@@ -18,10 +18,10 @@ function Countup() {
   ];
   return (
     <>
-    <Heading textAlign={'center'} mt={"20px"}>Our Numbers</Heading>
-    <Text  mb={'20px'}textAlign={'center'}>Join the happy customers who&apos;ve transformed their spaces with Hues & Shades!</Text>
+    <Heading textAlign={'center'} mt={"30px"} pb={'8px'}>Our Numbers</Heading>
+    <Text  mb={'30px'}textAlign={'center'}>Join the happy customers who&apos;ve transformed their spaces with Hues & Shades!</Text>
     <Flex
-      gap={"80px"}
+      gap={{base:"20px",md:"80px"}}
       flexWrap={"wrap"}
       justifyContent={"center"}
       alignItems={"center"}

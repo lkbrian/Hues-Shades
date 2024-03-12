@@ -72,10 +72,9 @@ function HeroSection() {
             <Flex direction={"column"} justifyContent={"center"}>
               <Box className="title" data-swiper-parallax="-300">
                 <Heading
-                  fontSize={{ sm: "1.8rem", lg: "2.4rem" }}
+                  fontSize={{base:"1.6rem", sm: "1.8rem", lg: "2.4rem" }}
                   letterSpacing={"2px"}
                   textAlign={"center"}
-                  display={{ base: "none", sm: "block" }}
                 >
                   {slide.title}
                   <br />
@@ -87,7 +86,7 @@ function HeroSection() {
                 <Text
                   as={"p"}
                   fontSize={{ base: "1.4rem", sm: "1.2rem" }}
-                  fontWeight={{ base: "semibold", sm: "400" }}
+                  display={{ base: "none", sm: "block" }}
                   w={[300, 500, 600]}
                   textAlign={"center"}
                   letterSpacing={"1px"}

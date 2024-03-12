@@ -1,4 +1,5 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
+import { HiChevronDoubleLeft,HiChevronDoubleRight } from "react-icons/hi";
 import PropTypes from "prop-types";
 import { useState } from "react";
 function Pagination({ imagesPerPage, totalImages, paginate }) {
@@ -8,12 +9,13 @@ function Pagination({ imagesPerPage, totalImages, paginate }) {
     pageNumbers.push(i);
   }
   function handleClick(number) {
-    paginate(number)
-    setActivePage(number)
+    paginate(number);
+    setActivePage(number);
   }
 
   return (
-    <Box margin={"auto"}>
+    <Box margin={"auto"} display={"flex"} alignItems={"center"} gap={4}>
+      <HiChevronDoubleLeft fontSize={24} />
       <Flex
         boxShadow={"0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);"}
         bg={"#111"}
@@ -34,8 +36,9 @@ function Pagination({ imagesPerPage, totalImages, paginate }) {
           >
             {number}
           </Text>
-        ))}
+        ))}        
       </Flex>
+      <HiChevronDoubleRight fontSize={24} />
     </Box>
   );
 }
@@ -44,5 +47,5 @@ export default Pagination;
 Pagination.propTypes = {
   imagesPerPage: PropTypes.number,
   totalImages: PropTypes.number,
-  paginate: PropTypes.func
+  paginate: PropTypes.func,
 };
