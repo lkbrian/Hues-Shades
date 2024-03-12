@@ -35,9 +35,9 @@ function BackToTop() {
       bottom={"70px"}
       zIndex={"3"}
       color={"#fff8ac"}
-      right={"4px"}
+      right={"24px"}
       borderRadius={"md"}
-      bg={"#111"}
+      bg={"#383838"}
       cursor={"pointer"}
       p={"4px"}
       display={showButton ? "inline": "none"}
