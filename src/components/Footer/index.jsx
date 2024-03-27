@@ -91,15 +91,15 @@ function Footer() {
             </Box>           
           <Box display={'flex'} gap={'8px'} alignItems={'center'}>
           <FaTiktok fontSize={'1.4rem'} />
-          <Link href="https://vm.tiktok.com/ZMMJ9yhXM/" target="_blank" mx={2}>
+          <a href="https://vm.tiktok.com/ZMMJ9yhXM/" target="_blank" mx={2}>
             hues & shades
-          </Link>
+          </a>
           </Box>
           <Box display={'flex'} gap={'8px'} alignItems={'center'}>
             <PiInstagramLogoFill fontSize={'1.4rem'} />
-            <Link href="https://www.instagram.com/huesshades1?igsh=MTk1eWYyNnNjZGJpbQ==" target="_blank" mx={2}>
+            <a href="https://www.instagram.com/huesshades1?igsh=MTk1eWYyNnNjZGJpbQ==" target="_blank" mx={2}>
             huesshades1
-          </Link>
+          </a>
           </Box>
         </Flex>
 
