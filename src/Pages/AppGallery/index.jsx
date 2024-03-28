@@ -8,7 +8,7 @@ import React from "react";
 
 function AppGallery() {
   const [currentPage,setCurrentPage] = useState(1);
-  const [imagesPerPage] = useState(15);
+  const [imagesPerPage] = useState(20);
   //get current images
   const indexOfLastImage = currentPage * imagesPerPage;
   const indexOfFirstImage = indexOfLastImage - imagesPerPage;
