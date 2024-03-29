@@ -23,6 +23,7 @@ function Navbar() {
       bg={"#111"}
       alignItems={"center"}
       py={"20px"}overflow={"hidden"}
+      pr={'30px'}
     >      
       <Image src={hslogo} h={'60px'} />
       <Flex
