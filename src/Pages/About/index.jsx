@@ -77,7 +77,7 @@ function About() {
           borderRadius={"1rem"}
           order={{ base: "1", lg: "2" }} p={"15px"}
         >
-          <Heading pb={"4px"} fontStyle={"italic"}>
+          <Heading pb={"4px"} >
             Our Story
           </Heading>
           <Text fontSize={"1.1rem"} w={[300, 500, 600, 800]}  >
@@ -110,7 +110,7 @@ function About() {
       >
         <Flex flexDir={"column"} w={{ base: "100%", lg: "40%" }} p={"10px"}>
           <Box display={"flex"} flexDir={"column"} alignItems={"center"}>
-            <Heading fontSize={"1.6rem"} fontStyle={"italic"}>
+            <Heading fontSize={"1.6rem"} >
               Mission
             </Heading>
             {/* <Box bg={"#111"} borderRadius={"full"} w={"93px"} h={"4px"}></Box> */}
@@ -121,7 +121,7 @@ function About() {
             </Text>
           </Box>
           <Box display={"flex"} flexDir={"column"} alignItems={"center"}>
-            <Heading fontSize={"1.6rem"} fontStyle={"italic"}>
+            <Heading fontSize={"1.6rem"} >
               Vision
             </Heading>
             {/* <Box bg={"#111"} borderRadius={"full"} w={"79px"} h={"4px"}></Box> */}
