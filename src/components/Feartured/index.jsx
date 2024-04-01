@@ -31,6 +31,7 @@ function Featured() {
   ];
   return (
     <>
+    <Box bg={'#111'} color={"#fff"}>
       <Heading pt={"20px"} textAlign={"center"}>
         Featured Products
       </Heading>
@@ -60,6 +61,8 @@ function Featured() {
           ))}
         </Flex>
       </Marquee>
+    </Box>
+
       <Heading py={"16px"} textAlign={"center"}>
         Testimonials
       </Heading>            

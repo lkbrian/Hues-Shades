@@ -39,7 +39,7 @@ function HeroSection() {
   return (
     <Box
       h={"55vh"}
-      bgImage="url('src/assets/home.jpg')"
+      bgImage="https://www.decorilla.com/online-decorating/wp-content/uploads/2022/07/Minimal-modern-vs-contemporary-home-decor.jpeg"
       bgPosition="center"
       bgRepeat="no-repeat"
       bgSize={"cover"}
