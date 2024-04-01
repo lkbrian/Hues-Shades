@@ -1,19 +1,26 @@
-import curt from "../../assets/0f5.jpg";
-import curtain from "../../assets/0g9.jpg";
 import curtains from "../../assets/0h9.jpg";
+import consultationImage from "../../assets/0f5.jpg";
+import tailoredImage from "../../assets/0g9.jpg";
+import serviceImage from "../../assets/0m8.jpg";
 // import home from "../../assets/home.jpg";
 export const ImageDataStub = [
   {
-    id: 1,
-    name: "1000+ Fabric Options",
-    description: "Embark on a journey through our extensive collection. Immerse yourself in a world of colors, patterns, and textures, where every fabric tells a unique story.Our curated selection ensures you find the perfect match for your distinct style. ",
-    image: curt,
+    id: 4,
+    name: "Personalized Design Consultation",
+    description: "Let our experienced designers guide you through the journey of creating your dream living space. From concept to execution, we offer personalized design consultations to transform your vision into reality.",
+    image: consultationImage,
   },
   {
-    id: 2,
-    name: "Variety of Mechanisms",
-    description: "Uncover the unparalleled versatility of our products with an array of innovative mechanisms designed to enhance your living spaces. From state-of-the-art control systems to seamlessly integrated automated solutions.",
-    image: curtain,
+    id: 5,
+    name: "Tailored Solutions",
+    description: "We understand that every space is unique, which is why we offer tailored solutions to meet your specific requirements. Whether it's maximizing functionality in a compact area or creating a luxurious retreat, our team is dedicated to delivering customized solutions.",
+    image: tailoredImage,
+  },
+  {
+    id: 6,
+    name: "Exceptional Customer Service",
+    description: "At our core, we believe in providing exceptional customer service that exceeds your expectations. From the moment you step into our showroom to the final installation, our team is committed to ensuring your complete satisfaction.",
+    image: serviceImage,
   },
   {
     id: 3,

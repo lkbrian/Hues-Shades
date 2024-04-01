@@ -29,11 +29,11 @@ const WhyUs = () => {
     >      
       {ImageDataStub.map((data, index) => {
         return (
-          <Box key={index} w={"sm"} className="card" boxShadow={' rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px'}>
+          <Box key={index} w={"sm"} className="card" borderRadius={'md'}>
             <Box className="image-container">
               <div className="overlay">
                 <Stack mt="2" spacing="3" textAlign={"center"}>
-                  <Heading fontSize={"1.6rem"} color={'#fff8ac'}  letterSpacing={'2px'}>{data.name}</Heading>
+                  <Heading fontSize={"1.6rem"}   letterSpacing={'2px'}>{data.name}</Heading>
                   <Text letterSpacing={'1px'} fontSize={'1.05rem'}>{data.description}</Text>
                 </Stack>
               </div>
@@ -45,6 +45,7 @@ const WhyUs = () => {
                   src={data.image}
                   alt="profile"
                   borderRadius="lg"
+
                 />
               </Flex>
             </Box>
