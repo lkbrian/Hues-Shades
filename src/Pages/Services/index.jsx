@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import { GiTheaterCurtains } from "react-icons/gi";
 import { BiSolidCabinet } from "react-icons/bi";
+import Countup from "../../components/Countup";
 // import { SiMedibangpaint } from "react-icons/si";
 
 function Services() {
@@ -75,11 +76,13 @@ function Services() {
     {
       title: "Institutions",
       description:
-        "Ensure comfort in hotels, and medical and educational facilities with specialized interior design solutions prioritizing functionality.",
+        "Ensure comfort in institution facilities with specialized interior design solutions prioritizing functionality.",
       cases: ["Hospitals","Hotels","Medical Facilities","Educational Facilities",
       ],
+      // image:
+      //   "https://i.pinimg.com/736x/d1/c4/c0/d1c4c0db16957a181382f33fedec8777.jpg",
       image:
-        "https://tubadzincommunity.com/ptoophee/image.webp",
+      "https://media.licdn.com/dms/image/D5612AQEO8f4enCZhag/article-cover_image-shrink_720_1280/0/1659658838846?e=2147483647&v=beta&t=-gmZX1PYWOGkcIsSMKOW1Ww_TkYkj5hrQT8WfYnTqYQ",
     },
     {
       title: "Governmental",
@@ -172,6 +175,7 @@ function Services() {
           </Flex>
         ))}
       </Flex>
+      <Countup />
       <Center display={"flex"} flexDir={"column"} p={"18px"}>
         <Heading mt={"6"}>Our Clients</Heading>
         <Text w={[300, 400, 700]} textAlign={"center"}>
@@ -182,7 +186,7 @@ function Services() {
       </Center>
       <Flex
         flexWrap={"wrap"}
-        alignItems={"center"}
+        alignItems={"start"}
         justifyContent={"center"}
         gap={8}
         px={{ base: "10px", md: "30px" }}
@@ -202,7 +206,7 @@ function Services() {
             boxShadow={" rgba(0, 0, 0, 0.35) 0px 5px 15px"}
             mb={7}
           >
-            <Box maxh={"200px"}w={"auto"}overflow={"hidden"}>
+            <Box maxh={"200px"}w={"350px"}overflow={"hidden"}>
               <Image
                 h={"100%"}
                 w={"100%"}                

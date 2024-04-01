@@ -1,7 +1,7 @@
 import { Box} from "@chakra-ui/react";
 import WhyUs from "../../components/WhyUs";
 import HeroSection from "../../components/HeroSection";
-import Countup from "../../components/Countup";
+// import Countup from "../../components/Countup";
 import Featured from "../../components/Feartured";
 
 function Home() {
@@ -10,7 +10,7 @@ function Home() {
     <Box height={"auto"} minH={"100vh"}>
       <HeroSection/>
       <WhyUs />
-      <Countup />
+      {/* <Countup /> */}
       <Featured/>
     </Box>
   );
