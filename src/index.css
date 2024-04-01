@@ -42,3 +42,10 @@
 /* video{ */
   /* max-height: 500px; */
 /* } */
+.marquee{
+  height: 410px;
+  background: #111;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+}

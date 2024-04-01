@@ -1,8 +1,9 @@
-import { Box, Button, Flex, Input, Text } from "@chakra-ui/react";
+import { Box, Flex, Image,  Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { FaFacebookSquare,FaTiktok } from "react-icons/fa";
 import { PiInstagramLogoFill } from "react-icons/pi";
+import logo from "../../../logo/flg.png"
 
 function Footer() {
   return (
@@ -15,32 +16,35 @@ function Footer() {
       p={"12px"}
       display={"flex"}
       flexDirection={"column"}
-      justifyContent={"center"}
+      justifyContent={{base:"flex-start",md: "center" }}
       alignItems={"center"}
       bg={"#111"}
     >
       <Box
         p={"10px"}
         display={"flex"}
-        justifyContent={"space-evenly"}
+        justifyContent={{base:"flex-start",md: "space-evenly" }}
         // alignItems={"center"}
         width={{base:"100%",md:"80%"}}
-        gap={'20px'}
+        gap={'30px'}
         flexWrap={'wrap'}
-        flexDirection={{base:"column",md:"row"}}
-      >             
+        flexDirection={{base:"row",md:"row"}}
+      > <Box display={{base: "none",md: "flex"}} alignSelf={"center"}>
+        <Image src={logo} alt="Hues & Shades" h={"120px"}/>
+        </Box>          
         <Box
-          display={"flex"}
+          
           flexDirection={"column"}
           gap={"8px"}
-          textAlign={'center'}
+          display={{base: "none",sm: "flex"}}
+          textAlign={{base: 'start',md :"center"}}
         >
           <Text
             fontWeight={"bold"}
             letterSpacing={"2px"}
             color={"#fff7a2"}
           >
-            Usefull links
+          links
           </Text>
           <NavLink to={"/"} >
             Home
@@ -55,7 +59,7 @@ function Footer() {
         <Box
           display={"flex"}
           flexDirection={"column"}
-          textAlign={'center'}
+          textAlign={{base: 'start',md :"center"}}
           gap={"12px"}
         >
           <Text
@@ -76,7 +80,7 @@ function Footer() {
             Social links
           </Text>
           <Flex flexDirection={'column'}
-            alignItems={'center'}
+            alignItems={{base: 'start',md :'center'}}
             gap={'3px'}
             >
             <Box display={'flex'} gap={'8px'} alignItems={'center'}>
@@ -102,7 +106,7 @@ function Footer() {
         </Box>
         <Box display={"flex"}
           flexDirection={"column"}
-          textAlign={'center'}
+          textAlign={{base: 'start',md :"center"}}
           gap={"4px"}>
           <Text
             fontWeight={"bold"}
@@ -128,7 +132,7 @@ function Footer() {
           <Text>Saturday: 5:00 AM - 10:00 PM</Text>
           <Text>Sunday: 2:00pm - 10:00pm</Text>
         </Box>
-        <Flex flexDirection={"column"} textAlign={"center"}>
+        {/* <Flex flexDirection={"column"} textAlign={{base: 'start',md :}>
           <Text
             fontWeight={"bold"}
             letterSpacing={"2px"}
@@ -141,7 +145,7 @@ function Footer() {
             <Input type="email" placeholder="Enter your mail..." />
             <Button color={'black'}bg={'#fff8ac'} letterSpacing={'2px'} w={'30%'} fontSize='sm'>subscribe</Button>
           </Box>
-        </Flex>
+        </Flex> */}
       </Box>
       {/* lower section */}
       <Flex
