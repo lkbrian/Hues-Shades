@@ -8,7 +8,7 @@ import "./styles.css";
 function HeroSection() {
   const swiperOptions = {
     effect: "cube",
-    direction: "horizontal",
+    direction: "horizontal",    
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,

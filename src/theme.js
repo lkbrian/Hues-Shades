@@ -3,8 +3,8 @@ import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
   fonts: {
-    heading: `Lato`,
-    body: `Lato`,
+    heading: `outfit`,
+    body: `outfit`,
   },
 });
 

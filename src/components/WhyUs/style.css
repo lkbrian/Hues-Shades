@@ -23,10 +23,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
+  background: rgba(0, 0, 0, 0.7);
   box-sizing: border-box;
   z-index: 1;
+  backdrop-filter: blur(1px);
 }
 .overlay {
   position: absolute;
