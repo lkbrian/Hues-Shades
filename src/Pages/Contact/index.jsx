@@ -58,7 +58,8 @@ function Contact() {
                 justifyContent={"center"}
                 alignItems={"center"}
                 borderRadius={"full"}
-                border={"2px solid #111"}
+                bg={"#111"}
+                color={"#fff"}
                 mr={2}
                 mb={2}
               >
