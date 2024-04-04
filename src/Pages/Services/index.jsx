@@ -1,4 +1,5 @@
 import { Box, Center, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { extendTheme } from "@chakra-ui/react";
 import {
   FaGoogleWallet,
   FaShapes,
@@ -9,6 +10,18 @@ import { GiTheaterCurtains } from "react-icons/gi";
 import { BiSolidCabinet } from "react-icons/bi";
 import Countup from "../../components/Countup";
 // import { SiMedibangpaint } from "react-icons/si";
+
+//Breakpoints 
+const breakpoints = {
+  base: "0px",
+  sm: "320px",
+  md: "768px",
+  lg: "960px",
+  xl: "1200px",
+  "2xl": "1536px",
+};
+
+const theme = extendTheme({ breakpoints });
 
 function Services() {
   const services = [
@@ -112,15 +125,23 @@ function Services() {
         justifyContent={"center"}
         alignItems={"center"}
         color={"#fff"}
+        height={{ base: "100%", sm: "50%", md: "25%" }}
       >
         <div className="overlay-one"></div>
-          <Heading zIndex={2} color={"#fff"} mt={"6"}>What We Do</Heading>
-          <Text fontSize={"1.25rem"} w={[300, 400, 700]} textAlign={"center"} zIndex={2}>
-            At Hues & Shades, we offer a comprehensive range of services
-            tailored to elevate your living or working space. From exquisite
-            window treatments to bespoke cabinetry solutions, each offering is
-            meticulously crafted to meet your unique needs and preferences.
-          </Text>
+        <Heading zIndex={2} color={"#fff"} mt={"6"}>
+          What We Do
+        </Heading>
+        <Text
+          fontSize={"1.25rem"}
+          w={[300, 400, 700]}
+          textAlign={"center"}
+          zIndex={2}
+        >
+          At Hues & Shades, we offer a comprehensive range of services tailored
+          to elevate your living or working space. From exquisite window
+          treatments to bespoke cabinetry solutions, each offering is
+          meticulously crafted to meet your unique needs and preferences.
+        </Text>
       </Box>
 
       <Flex
@@ -206,10 +227,10 @@ function Services() {
             boxShadow={" rgba(0, 0, 0, 0.35) 0px 5px 15px"}
             mb={7}
           >
-            <Box maxh={"200px"}w={"350px"}overflow={"hidden"}>
+            <Box maxh={"200px"} w={"350px"} overflow={"hidden"}>
               <Image
                 h={"100%"}
-                w={"100%"}                
+                w={"100%"}
                 objectFit={"cover"}
                 src={client.image}
               />

@@ -43,7 +43,7 @@
   /* max-height: 500px; */
 /* } */
 .marquee{
-  height: 410px;
+  height: auto;
   background: #111;
   display: flex;
   align-items: top;

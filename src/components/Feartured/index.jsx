@@ -8,7 +8,7 @@ import mounting from "../../assets/0g9.jpg";
 
 function Featured() {
   const items = [
-    { image: chandalier, product: "Chandalier Lights" },
+    { image: chandalier, product: "Chandelier Lights" },
     { image: plant, product: "Faux plants" },
     { image: mounting, product: "Wall Mountings" },
     { image: rodes, product: "Curtain Rodes" },
@@ -32,7 +32,7 @@ function Featured() {
   return (
     <>
     <Box bg={'#111'} color={"#fff"}>
-      <Heading pt={"20px"} textAlign={"center"}>
+      <Heading pt={"30px"}mb={8} textAlign={"center"}>
         Featured Products
       </Heading>
 
@@ -40,21 +40,20 @@ function Featured() {
         className="marquee"
         autoFill
         speed={20}
-        gradientWidth={120}
+        gradientWidth={40}
         gradient
         gradientColor="#111"
         pauseOnHover
-        delay={8}
       >
-        <Flex gap={{ base: "60px", md: "120px", lg: "150px" }} mr={"125px"} px={"20px"}>
+        <Flex gap={{ base: "30px", md: "120px", lg: "150px" }} mr={{base:"25px",md:"125px"}} px={"20px"}>
           {items.map((item, index) => (
-            <Box key={index} w={"280px"} h={"250"} color={"#fff"}>
+            <Box key={index} w={{base:"120px",md:"240px"}}  color={"#fff"}>
               <Image
                 src={item.image}
                 borderRadius={"50%"}
                 objectFit={"contain"}
               />
-              <Text textAlign={"center"} fontSize={"1.2rem"} mt={"10px"}>
+              <Text textAlign={"center"} mb={8} fontSize={{base:".87rem",md:"1.2rem"}} mt={"10px"}>
                 {item.product}
               </Text>
             </Box>
