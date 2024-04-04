@@ -1,6 +1,6 @@
 import React from "react";
 import { Box,DrawerFooter,Flex, Image, Text, useDisclosure } from "@chakra-ui/react";
-import { CgMenuLeftAlt } from "react-icons/cg";
+import { CgMenuRightAlt } from "react-icons/cg";
 import { NavLink } from "react-router-dom";
 import hslogo from "/logo/hues-logo.png"
 import {
@@ -23,14 +23,14 @@ function Navbar() {
       bg={"#111"}
       alignItems={"center"}
       py={"20px"}overflow={"hidden"}
-      pr={'30px'}
+      pr={'10px'}
     >      
       <Image src={hslogo} h={'60px'} />
       <Flex
         as="nav"
         gap={{ base: "12px", md: "30px" }}
         display={{ base: "none", md: "flex" }}
-        pr={"20px"}
+        pr={"10px"}
       >
         <NavLink className={"links"} to={"/"} >
           Home
@@ -48,9 +48,9 @@ function Navbar() {
           Gallery
         </NavLink>
       </Flex>
-      <Flex display={{ base: "flex", md: "none" }} pr={'20px'}>
-        <Box cursor={'pointer'} border={'2px solid #fff8ac'} borderRadius={'8px'} ref={btnRef} bg={'none'} onClick={onOpen}>
-        <CgMenuLeftAlt color={"#fff8ac"} fontSize={'2rem'}/>
+      <Flex display={{ base: "flex", md: "none" }} pr={'4px'}>
+        <Box cursor={'pointer'}  borderRadius={'8px'} ref={btnRef} bg={'none'} onClick={onOpen}>
+        <CgMenuRightAlt color={"#fff8ac"} fontSize={'2rem'}/>
         </Box>
         <Drawer
           isOpen={isOpen}
