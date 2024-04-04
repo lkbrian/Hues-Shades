@@ -15,11 +15,14 @@ function BackToTop() {
       return;
     }
   };
-  window.addEventListener("scroll", handleShowButton);
 
   useEffect(() => {
-    return window.removeEventListener("scroll", handleShowButton);
-  });
+      window.addEventListener("scroll", handleShowButton);
+      //Clean up function
+    return () =>{
+      window.removeEventListener("scroll", handleShowButton)
+    };
+  },[]);
 
   const scrollToRef = () => {
     window.scrollTo({
