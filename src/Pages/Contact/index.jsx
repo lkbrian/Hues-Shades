@@ -30,7 +30,7 @@ function Contact() {
   
     emailjs
       .sendForm('process.env.REACT_APP_EMAILJS_SERVICE_ID', 'REACT_APP_EMAILJS_TEMPLATE_ID', form.current, {
-        publicKey: 'process.env.REACT_APP_EMAILJS_PUBLIC_KEY=YOUR_PUBLIC_KEY',
+        publicKey: 'process.env.REACT_APP_EMAILJS_PUBLIC_KEY',
       })
       .then(
         () => {
