@@ -29,8 +29,8 @@ function Contact() {
     e.preventDefault();
   
     emailjs
-      .sendForm('process.env.REACT_APP_EMAILJS_SERVICE_ID', 'REACT_APP_EMAILJS_TEMPLATE_ID', form.current, {
-        publicKey: 'process.env.REACT_APP_EMAILJS_PUBLIC_KEY',
+      .sendForm('service_3r7102s', 'template_99x4i7i', form.current, {
+        publicKey: 'K4e-RB_Atj_vEvQx8',
       })
       .then(
         () => {
@@ -39,7 +39,7 @@ function Contact() {
             title: 'Message sent.',
             description: "We've recieved your message & we will contact you.",
             status: 'success',
-            duration: 4000,
+            duration: 9000,
             isClosable: true,
           });
         },
@@ -47,9 +47,9 @@ function Contact() {
           console.log('FAILED...', error.text);
           toast({
             title: 'Encountered an error.',
-            description: "will be sure to resolve it soon.",
+            description: "will be sure to resolve.",
             status: 'error',
-            duration: 4000,
+            duration: 9000,
             isClosable: true,
           });
         }
