@@ -14,8 +14,47 @@ import {
 } from "@chakra-ui/react";
 import { FaFacebookF, FaTiktok,FaInstagram,FaMailBulk } from "react-icons/fa";
 import { MdLocationOn, MdPhone } from "react-icons/md";
+import  { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { useToast } from '@chakra-ui/react'
 
+// REACT_APP_EMAILJS_SERVICE_ID=service_uierq service_3r7102s', 'template_99x4i7i
+// REACT_APP_EMAILJS_TEMPLATE_ID=YOUR_TEMPLATE_ID
+// REACT_APP_EMAILJS_PUBLIC_KEY=YOUR_PUBLIC_KEY publicKey: 'K4e-RB_Atj_vEvQx8
 function Contact() {
+  const form = useRef();
+  const toast = useToast()
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+  
+    emailjs
+      .sendForm('process.env.REACT_APP_EMAILJS_SERVICE_ID', 'REACT_APP_EMAILJS_TEMPLATE_ID', form.current, {
+        publicKey: 'process.env.REACT_APP_EMAILJS_PUBLIC_KEY=YOUR_PUBLIC_KEY',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          toast({
+            title: 'Message sent.',
+            description: "We've recieved your message & we will contact you.",
+            status: 'success',
+            duration: 4000,
+            isClosable: true,
+          });
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          toast({
+            title: 'Encountered an error.',
+            description: "will be sure to resolve it soon.",
+            status: 'error',
+            duration: 4000,
+            isClosable: true,
+          });
+        }
+      );
+  };
   const socialMediaLinks = [
     {
       platform: "Facebook",
@@ -95,15 +134,15 @@ function Contact() {
         <Box mt={8}w={{base:'100%',md:'50%'}}px={{base:2,md:20}}>
         <Heading fontSize={{ base: "lg", md: "xl" }}>Send us a Message</Heading>
         <Box mt={4}>
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             <FormControl id="name" isRequired>
               <FormLabel>Your Name</FormLabel>
-              <Input type="text" placeholder="John Doe" />
+              <Input type="text" placeholder="John Doe" name="name"/>
             </FormControl>
 
             <FormControl id="email" mt={4} isRequired>
               <FormLabel>Email address</FormLabel>
-              <Input type="email" placeholder="john@example.com" />
+              <Input type="email" placeholder="john@example.com" name="email" />
               <FormHelperText>
                 We&apos;ll never share your email.
               </FormHelperText>
@@ -111,17 +150,17 @@ function Contact() {
 
             <FormControl id="phone" mt={4}>
               <FormLabel>Phone number</FormLabel>
-              <Input type="tel" placeholder="123-456-7890" />
+              <Input type="tel" placeholder="123-456-7890" name="number" />
             </FormControl>
 
             <FormControl id="message" mt={4} isRequired>
               <FormLabel>Message</FormLabel>
-              <Textarea placeholder="Enter your message here" />
+              <Textarea placeholder="Enter your message here" name="message" />
             </FormControl>
 
             <FormControl id="location" mt={4}>
               <FormLabel>Location</FormLabel>
-              <Input type="text" placeholder="Enter your location" />
+              <Input type="text" placeholder="Enter your location" name="location" />
               <FormHelperText>
                 Provide information about your location (optional).
               </FormHelperText>
