@@ -42,6 +42,7 @@ function Contact() {
             duration: 9000,
             isClosable: true,
           });
+          form.current.reset();
         },
         (error) => {
           console.log('FAILED...', error.text);
