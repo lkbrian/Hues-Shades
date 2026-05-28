@@ -2,7 +2,7 @@ import React from "react";
 import { Box,DrawerFooter,Flex, Image, Text, useDisclosure } from "@chakra-ui/react";
 import { CgMenuRightAlt } from "react-icons/cg";
 import { NavLink } from "react-router-dom";
-import hslogo from "/logo/hues-logo.jpeg"
+import hslogo from "/logo/hues-logo_two.png"
 import {
   Drawer,
   DrawerBody,

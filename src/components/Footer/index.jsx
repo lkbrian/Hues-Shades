@@ -1,5 +1,5 @@
 import { Box, Flex, Image,  Text } from "@chakra-ui/react";
-import logo from "/logo/hues-logo.jpeg"
+import logo from "/logo/hues-logo_two.png"
 
 
 function Footer() {
