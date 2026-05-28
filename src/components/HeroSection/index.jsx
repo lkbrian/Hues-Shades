@@ -1,49 +1,55 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
-import { Parallax, Pagination, Navigation, Autoplay } from "swiper/modules";
+import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
+import { EffectFade, Pagination, Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { HashLink } from "react-router-hash-link";
 import "swiper/css";
+import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./styles.css";
+
 function HeroSection() {
   const swiperOptions = {
-    effect: "cube",
-    direction: "horizontal",    
+    effect: "fade",
+    loop: true,
+    speed: 1000,
     autoplay: {
-      delay: 5000,
+      delay: 5500,
       disableOnInteraction: false,
-    },
-    cubeEffect: {
-      slideShadows: true,
     },
   };
 
   const slides = [
     {
-      title: "Welcome to Hues & Shades",
+      title: "Welcome to Crafted Hues & Shades",
       subtitle: "Where Elegance Meets Functionality",
-      text: "Welcome to Hues & Shades, where luxury meets functionality. Our curated collection of curtains brings elegance and style to any space, transforming it into a haven of comfort and beauty. From timeless classics to modern designs, we offer a wide range of fabrics, colors, and patterns to suit every taste and preference.",
+      text: "Luxury curtains, sheers, blinds, and interior details curated to make every room feel calm, polished, and personal.",
+      image:
+        "/about/liming-room-decor.jpg",
+      tags: ["Curtains", "Sheers", "Blinds"],
     },
     {
       title: "Elevate Your Space",
       subtitle: "Discover Our Exquisite Collection",
-      text: "Quality craftsmanship is at the heart of everything we do. Each curtain in our collection is meticulously crafted using premium materials and attention to detail, ensuring durability and long-lasting beauty. Whether you're seeking blackout curtains for a peaceful night's sleep or sheer drapes to infuse your room with natural light, we have the perfect solution for you.",
+      text: "From blackout comfort to light-filled drapery, our team helps you choose finishes that work beautifully for daily living.",
+      image:
+        "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1800&q=80",
+      tags: ["Wall Decor", "Cabinetry", "Gypsum"],
     },
     {
       title: "Craftsmanship at its Finest",
       subtitle: "Quality Products for Every Space",
-      text: "Elevate your interior design with Hues & Shades. Visit us today to explore our stunning selection of curtains and discover how our expert team can help you find the perfect window treatments for your home. With our commitment to excellence and personalized service, we're here to make your decorating dreams a reality.",
+      text: "Tailored solutions for homes, offices, hotels, and institutions across Nairobi, designed with care from consultation to install.",
+      image:
+        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=80",
+      tags: ["Residential", "Commercial", "Custom Fit"],
     },
   ];
 
   return (
     <Box
-      h={"55vh"}
-      bgImage="https://www.decorilla.com/online-decorating/wp-content/uploads/2022/07/Minimal-modern-vs-contemporary-home-decor.jpeg"
-      bgPosition="center"
-      bgRepeat="no-repeat"
-      bgSize={"cover"}
-      backdropFilter={blur("1px")}
+      as="section"
+      className="hero-section"
       id="Home"
     >
       <Swiper
@@ -51,50 +57,58 @@ function HeroSection() {
           "--swiper-navigation-color": "#fff",
           "--swiper-pagination-color": "#fff",
         }}
-        speed={4000}
-        parallax={true}
         pagination={{
           clickable: true,
         }}
-        navigation={false}
+        navigation={true}
         {...swiperOptions}
-        modules={[Parallax, Pagination, Navigation, Autoplay]}
-        className="mySwiper"
+        modules={[EffectFade, Pagination, Navigation, Autoplay]}
+        className="hero-swiper"
       >
-        {" "}
-        <Box
-          slot="container-start"
-          className="parallax-bg"
-          data-swiper-parallax="-23%"
-        ></Box>
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <Flex direction={"column"} justifyContent={"center"}>
-              <Box className="title" data-swiper-parallax="-300">
+            <Box
+              className="hero-slide"
+              style={{ backgroundImage: `url(${slide.image})` }}
+            >
+              <Box className="hero-overlay" />
+              <Flex className="hero-content">
+                <Text className="hero-kicker">Interior Design Studio</Text>
                 <Heading
-                  fontSize={{base:"1.6rem", sm: "1.8rem", lg: "2.4rem" }}
-                  letterSpacing={"2px"}
-                  textAlign={"center"}
+                  as={index === 0 ? "h1" : "h2"}
+                  className="hero-title"
                 >
                   {slide.title}
-                  <br />
-                  {slide.subtitle}
                 </Heading>
-              </Box>
-
-              <div className="text" data-swiper-parallax="-100">
-                <Text
-                  as={"p"}
-                  fontSize={{ base: "1.4rem", sm: "1.2rem" }}
-                  display={{ base: "none", sm: "block" }}
-                  w={[300, 500, 600]}
-                  textAlign={"center"}
-                  letterSpacing={"1px"}
-                >
-                  {slide.text}
-                </Text>
-              </div>
-            </Flex>
+                <Text className="hero-subtitle">{slide.subtitle}</Text>
+                <Text className="hero-text">{slide.text}</Text>
+                <Flex className="hero-tags">
+                  {slide.tags.map((tag) => (
+                    <Text as="span" key={tag}>
+                      {tag}
+                    </Text>
+                  ))}
+                </Flex>
+                <Flex className="hero-actions">
+                  <Button
+                    as={HashLink}
+                    smooth
+                    to="/Services#Services"
+                    className="hero-action-primary"
+                  >
+                    Explore Services
+                  </Button>
+                  <Button
+                    as={HashLink}
+                    smooth
+                    to="/Contact#Contact"
+                    className="hero-action-secondary"
+                  >
+                    Book Consultation
+                  </Button>
+                </Flex>
+              </Flex>
+            </Box>
           </SwiperSlide>
         ))}
       </Swiper>

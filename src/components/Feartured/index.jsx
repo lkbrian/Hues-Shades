@@ -20,14 +20,14 @@ function Featured() {
       image: "https://bit.ly/prosper-baba",
       rating: "⭐⭐⭐⭐⭐",
       review:
-        "I recently embarked on a home redecoration project and found Hues and Shades to be the best option. They offered an extensive range of options, and I was impressed by the quality of their products.The furniture and decor items I purchased exceeded my expectations. The delivery process was smooth, and the items arrived well-packaged and in pristine condition. Hues and Shades is the go-to for anyone looking to elevate their home's interior design, and I highly recommend them.",
+        "I recently embarked on a home redecoration project and found Crafted Hues and Shades to be the best option. They offered an extensive range of options, and I was impressed by the quality of their products.The furniture and decor items I purchased exceeded my expectations. The delivery process was smooth, and the items arrived well-packaged and in pristine condition. Crafted Hues and Shades is the go-to for anyone looking to elevate their home's interior design, and I highly recommend them.",
     },
     {
       name: "Christian Otieno",
       image: " https://bit.ly/code-beast",
       rating: "⭐⭐⭐⭐",
       review:
-      "Hues and Shades redefine excellence in interior design. Their extensive, trend-forward product range effortlessly adapts to diverse styles. With impeccable customer service, they excel in sourcing specific items. The materials' quality ensures enduring satisfaction. As an interior designer, Hues and Shades consistently elevates my creative journey, making every project a masterpiece. I recommend them"}
+      "Crafted Hues and Shades redefine excellence in interior design. Their extensive, trend-forward product range effortlessly adapts to diverse styles. With impeccable customer service, they excel in sourcing specific items. The materials' quality ensures enduring satisfaction. As an interior designer, Crafted Hues and Shades consistently elevates my creative journey, making every project a masterpiece. I recommend them"}
   ];
   return (
     <>

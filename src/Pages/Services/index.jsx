@@ -1,5 +1,4 @@
 import { Box, Center, Flex, Heading, Image, Text } from "@chakra-ui/react";
-import { extendTheme } from "@chakra-ui/react";
 import {
   FaGoogleWallet,
   FaShapes,
@@ -10,18 +9,6 @@ import { GiTheaterCurtains } from "react-icons/gi";
 import { BiSolidCabinet } from "react-icons/bi";
 import Countup from "../../components/Countup";
 // import { SiMedibangpaint } from "react-icons/si";
-
-//Breakpoints 
-const breakpoints = {
-  base: "0px",
-  sm: "320px",
-  md: "768px",
-  lg: "960px",
-  xl: "1200px",
-  "2xl": "1536px",
-};
-
-const theme = extendTheme({ breakpoints });
 
 function Services() {
   const services = [
@@ -137,7 +124,7 @@ function Services() {
           textAlign={"center"}
           zIndex={2}
         >
-          At Hues & Shades, we offer a comprehensive range of services tailored
+          At Crafted Hues & Shades, we offer a comprehensive range of services tailored
           to elevate your living or working space. From exquisite window
           treatments to bespoke cabinetry solutions, each offering is
           meticulously crafted to meet your unique needs and preferences.

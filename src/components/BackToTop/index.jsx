@@ -5,20 +5,15 @@ import { useState, useEffect } from "react";
 function BackToTop() {
   // const top = useRef(0)
   const [showButton, setShowButton] = useState(false);
-  const handleShowButton = () => {
-    if (!showButton && window.scrollY > 150) {
-      setShowButton(true);
-      return;
-    }
-    if (!showButton && window.scrollY <= 150) {
-      setShowButton(false);
-      return;
-    }
-  };
 
   useEffect(() => {
-      window.addEventListener("scroll", handleShowButton);
-      //Clean up function
+    const handleShowButton = () => {
+      setShowButton(window.scrollY > 150);
+    };
+
+    window.addEventListener("scroll", handleShowButton);
+    handleShowButton();
+
     return () =>{
       window.removeEventListener("scroll", handleShowButton)
     };

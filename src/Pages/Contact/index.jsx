@@ -81,7 +81,7 @@ function Contact() {
       <Flex flexDir={{ base: "column", md: "row" }} justify="space-evenly" >
         <Flex flexWrap={"wrap"}mt={8} w={{base:'100%',md:'50%'}}justify="space-evenly">
         <Box mb={4}>
-          <Heading fontSize={{ base: "lg", md: "xl" }}>Hues & Shades</Heading>
+          <Heading fontSize={{ base: "lg", md: "xl" }}>Crafted Hues & Shades</Heading>
           <Text fontSize={{ base: "sm", md: "md" }} maxW="300px" mt={2}>
             Transform your home with our exquisite collection of hues and
             shades. Discover the perfect colors and textures to elevate your

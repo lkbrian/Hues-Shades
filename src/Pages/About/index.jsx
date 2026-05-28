@@ -81,7 +81,7 @@ function About() {
             Our Story
           </Heading>
           <Text fontSize={"1.1rem"} w={[300, 500, 600, 800]}  >
-            &quot;Founded with a passion for colors and interior design, Hues &
+            &quot;Founded with a passion for colors and interior design, Crafted Hues &
             Shades emerged from the belief that your living space & commercial
             space should be an extension of your unique personality and style.
             <Text ref={read_more} as={"span"} display={{base:"none",md:"inline"}}>
@@ -90,7 +90,7 @@ function About() {
             journey. Our mission is to craft spaces that resonate with you,
             infusing the process with delight. Through attentive listening and
             timeless design, we create environments that inspire and uplift. At
-            Hues & Shades, we know every shade tells a story. Let us help you
+            Crafted Hues & Shades, we know every shade tells a story. Let us help you
             narrate yours with vibrant palettes and elegant designs&quot;
             </Text>
             </Text>            
