@@ -25,7 +25,7 @@ function HeroSection() {
       subtitle: "Where Elegance Meets Functionality",
       text: "Luxury curtains, sheers, blinds, and interior details curated to make every room feel calm, polished, and personal.",
       image:
-        "/about/liming-room-decor.jpg",
+        "/about/living-room-decor.jpg",
       tags: ["Curtains", "Sheers", "Blinds"],
     },
     {
@@ -33,7 +33,7 @@ function HeroSection() {
       subtitle: "Discover Our Exquisite Collection",
       text: "From blackout comfort to light-filled drapery, our team helps you choose finishes that work beautifully for daily living.",
       image:
-        "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1800&q=80",
+        "/about/living-room.jpg",
       tags: ["Wall Decor", "Cabinetry", "Gypsum"],
     },
     {
